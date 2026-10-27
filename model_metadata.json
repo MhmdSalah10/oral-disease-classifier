@@ -1,0 +1,78 @@
+{
+  "class_names": [
+    "Calculus",
+    "Caries",
+    "Gingivitis",
+    "Hypodontia",
+    "Mouth Ulcer",
+    "Tooth Discoloration"
+  ],
+  "num_classes": 6,
+  "img_size": [
+    224,
+    224
+  ],
+  "best_model_name": "EfficientNetB0",
+  "best_model_filename": "best_model.keras",
+  "preprocessing_note": "Pass raw RGB [0, 255] float32 tensors of shape (224, 224, 3).",
+  "test_metrics": {
+    "accuracy": 0.9844,
+    "macro_precision": 0.9745,
+    "macro_recall": 0.9748,
+    "macro_f1": 0.9745,
+    "weighted_f1": 0.9844,
+    "min_class_f1": 0.9173
+  },
+  "all_models_comparison": [
+    {
+      "Model": "EfficientNetB0",
+      "Accuracy (%)": 98.44,
+      "Macro Precision (%)": 97.45,
+      "Macro Recall (%)": 97.48,
+      "Macro F1-Score (%)": 97.45,
+      "Weighted F1-Score (%)": 98.44,
+      "Min Class F1 (%)": 91.73
+    },
+    {
+      "Model": "Custom_CNN",
+      "Accuracy (%)": 53.53,
+      "Macro Precision (%)": 55.01,
+      "Macro Recall (%)": 50.55,
+      "Macro F1-Score (%)": 47.11,
+      "Weighted F1-Score (%)": 49.89,
+      "Min Class F1 (%)": 28.46
+    }
+  ],
+  "per_class_f1_comparison": [
+    {
+      "Class Name": "Calculus",
+      "Custom_CNN": 31.93,
+      "EfficientNetB0": 91.73
+    },
+    {
+      "Class Name": "Caries",
+      "Custom_CNN": 28.46,
+      "EfficientNetB0": 98.57
+    },
+    {
+      "Class Name": "Gingivitis",
+      "Custom_CNN": 37.5,
+      "EfficientNetB0": 97.12
+    },
+    {
+      "Class Name": "Hypodontia",
+      "Custom_CNN": 58.61,
+      "EfficientNetB0": 98.92
+    },
+    {
+      "Class Name": "Mouth Ulcer",
+      "Custom_CNN": 74.6,
+      "EfficientNetB0": 99.88
+    },
+    {
+      "Class Name": "Tooth Discoloration",
+      "Custom_CNN": 51.57,
+      "EfficientNetB0": 98.51
+    }
+  ]
+}
